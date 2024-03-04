@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active,
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+:root {
+  --primary-color: #111111;
+  --accent-color: #ffe841;
+  --accent-color-2: #0d30b6;
+  --btn-color: #0d30b6;
+  --btn-color-2: #ffe841;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #111111;
+  --dop-color: #8a8a8a;
+  /* --accent-text-color: #ffffff;  */
+  /* --time: 250ms; */
+  /* --cubic: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
+  background: url(/img/bg-1.jpg) no-repeat;
+  background-size: cover;
+  line-height: normal;
+}
+body .no-scroll {
+  overflow: hidden;
+}
+body a {
+  color: var(--primary-text-color);
+}
+body a:hover {
+  color: var(--accent-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 0 auto;
+}
+
+.container-all {
+  width: 100%;
+}
+
+.container-l {
+  width: 100%;
+  padding-left: 60px;
+}
+
+.container-single {
+  max-width: 1160px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row__sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.section {
+  margin-bottom: 84px;
+}
+
+.section-s {
+  margin-bottom: 16px;
+}
+
+.section-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-item {
+  width: 32%;
+  padding: 24px;
+  border-radius: 33px;
+  background: var(--accent-color-d);
+  justify-content: space-between;
+}
+
+.section-title {
+  font-family: Unbounded;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 36px;
+}
+
+.title-item {
+  font-family: Unbounded;
+  color: var(--secondary-text-color);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 48px */
+}
+
+.title-item-h4 {
+  font-family: Unbounded;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 27px */
+}
+
+.text-item {
+  line-height: 150%;
+}
+
+.btn {
+  font-family: Unbounded;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  border-radius: 64px;
+  border: none;
+  background: var(--btn-color);
+  display: flex;
+  padding: 24px 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.btn:hover {
+  background: var(--accent-color-d);
+}
+
+.btn-icon {
+  width: 24px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.styled-btn {
+  background: url(/img/btn-blue.svg) no-repeat;
+  width: 240px;
+  height: 50px;
+  padding: 16px 27px;
+  border: none;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.styled-btn:hover {
+  background: url(/img/btn-yell.svg) no-repeat;
+  color: #000000;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+.btn {
+  font-family: Unbounded;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  border-radius: 64px;
+  border: none;
+  background: var(--btn-color);
+  display: flex;
+
+  padding: 24px 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+
+  &:hover {
+    background: var(--accent-color-d);
+  }
+}
+
+.btn-icon {
+  width: 24px;
+}
