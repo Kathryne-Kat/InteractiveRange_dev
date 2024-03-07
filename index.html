@@ -3,29 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DneprStroy</title>
+    <title>InteractiveRange</title>
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
-    <header class="header section">
-      <div class="container">
-        <div class="header__container row">
+    <header class="header">
+      <div class="container container-header">
+        <div class="header__container row__sb">
+          <div class="header__container-item-wrap">
+            <div class="header__logo logo">
+              <a href="/"><img src="/img/logo.svg" alt="logo" /></a>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__menu-list row">
+                <li><a href="/">Модули</a></li>
+                <li><a href="#">FQA</a></li>
+                <li><a href="#">О компании</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__container-item-wrap row-right">
+            <ul class="header-soс row">
+              <li class="krasiva-animatsiya-knopki">
+                <a href="#"
+                  ><img src="/img/icon/TelegramLogo.svg" alt="icon"
+                /></a>
+              </li>
+              <li class="krasiva-animatsiya-knopki">
+                <a href="#"
+                  ><img src="/img/icon/WhatsappLogo.svg" alt="icon"
+                /></a>
+              </li>
+              <li class="krasiva-animatsiya-knopki">
+                <a href="#"
+                  ><img src="/img/icon/InstagramLogo.svg" alt="icon"
+                /></a>
+              </li>
+            </ul>
+            <button class="btn-header popup-open" type="button">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="header-burger">
+            <img src="./img/icon/menu.svg" alt="меню" />
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu-wrap">
+          <button class="button-x mobile-menu-close" type="button">
+            <img src="./img/icon/X.svg" alt="іконка" />
+          </button>
           <div class="header__logo logo">
             <a href="/"><img src="/img/logo.svg" alt="logo" /></a>
           </div>
           <nav class="header__menu">
-            <ul class="header__menu-list row">
+            <ul class="header__menu-list mob-menu row">
               <li><a href="/">Модули</a></li>
               <li><a href="#">FQA</a></li>
               <li><a href="#">О компании</a></li>
             </ul>
           </nav>
-          <ul class="header-soс row">
+          <ul class="header-soс mob-soc row">
             <li class="krasiva-animatsiya-knopki">
               <a href="#"
                 ><img src="/img/icon/TelegramLogo.svg" alt="icon"
@@ -42,125 +86,1166 @@
               /></a>
             </li>
           </ul>
-          <button class="btn-header popup-open" type="button">
-            Оставить заявку
-          </button>
-          <!-- <div class="header-burger">
-            <img src="./img/icon/burger.svg" alt="меню" />
-          </div> -->
         </div>
       </div>
-      <!-- <div class="burger-menu">
-        <div class="mobile-menu-wrap">
-          <div class="mob-menu-leng-wr row">
-            <div class="header-bottom-leng leng-mob row">             
-              <img class="btn-leng" src="img/icon/leng_icon.svg" alt="leng" />
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__item-wrap container container-hero row">
+          <div class="hero__item hero__item-one">
+            <h1>С нуля <br />до кибер–специалиста:</h1>
+            <h2>Мы сделаем из Вас крутого этичного хакера.</h2>
+            <div class="hero__form">
+              <p>Платформа практического обучения по кибербезопасности.</p>
+              <form action="#">
+                <input type="text" placeholder="Имя" />
+                <input
+                  class="hero-inp-two"
+                  type="text"
+                  placeholder="Номер телефона"
+                />
+                <button class="btn">Оставить заявку</button>
+              </form>
             </div>
-            <button class="button-x mobile-menu-close" type="button">
-              <img src="./img/icon/X.svg" alt="іконка" />
-            </button>
           </div>
-          <nav class="mobile-menu">
-            <ul class="mobile-menu-list">
-              <li><a href="/">Главная</a></li>
+          <div class="hero__item hero__item-two">
+            <img src="./img/hero.png" alt="услуги" />
+            <img class="hero-img-mob" src="./img/hero1.png" alt="услуги" />
+            <ul class="hero__item-img-descr-list row">
               <li>
-                <div class="" id="accordeon-menu-mob">
-                  <div class="row accm1-head">
-                    <a href="/page-generator.html">Продукти</a>
-                    <div>
-                      <button type="button" class="faq-img faq-open1">
-                        <img src="./img/icon/CaretDown_s.svg" alt="іконка" />
-                      </button>
-                      <button
-                        type="button"
-                        class="faq-img faq-closed1 is-hidden"
-                      >
-                        <img src="./img/icon/CaretUp.svg" alt="іконка" />
-                      </button>
-                    </div>
-                  </div>
-                  <div class="accm1-body column is-hidden">
-                    <div class="marg column">
-                      <a href="/page-generator.html">Генератори</a>
-                      <a href="/page-generator.html">Запчастини</a>
-                    </div>
-                  </div>
-                </div>
+                <h5>80%</h5>
+                <p>практики</p>
               </li>
               <li>
-                <div class="" id="accordeon-menu-mob2">
-                  <div class="row accm2-head">
-                    <a href="/page-generator.html">Послуги</a>
-                    <div>
-                      <button type="button" class="faq-img faq-open1">
-                        <img src="./img/icon/CaretDown_s.svg" alt="іконка" />
-                      </button>
-                      <button
-                        type="button"
-                        class="faq-img faq-closed1 is-hidden"
-                      >
-                        <img src="./img/icon/CaretUp.svg" alt="іконка" />
-                      </button>
-                    </div>
-                  </div>
-                  <div class="accm2-body column is-hidden">
-                    <div class="marg column">
-                      <a href="/page-generator.html"
-                        >Будівництво сонячних станцій</a
-                      >
-                      <a href="/page-generator.html">Електромонтажні роботи</a>
-                      <a href="/page-generator.html">Сервісне обслуговування</a>
-                    </div>
-                  </div>
-                </div>
+                <h5>75+<span></span></h5>
+                <p>кибер - сценариев</p>
               </li>
-              <li><a href="/page-about.html">Про нас</a></li>
-              <li><a href="/page-obj.html">Об'єкти</a></li>
-              <li><a href="/page-blog.html">Блог</a></li>
-              <li><a href="/page-reviews.html">Відгуки</a></li>
+
+              <li>
+                <h5>5+<span>лет</span></h5>
+                <p>на рынке</p>
+              </li>
             </ul>
-          </nav>
-          <button class="menu-btn-1 btn popup-open" type="button">
-            Залишити заявку
-          </button>
-          <ul class="footer-list-cont menu-mob-list-cont footer-list">
-            <li>
-              <a href="#"
-                ><img src="./img/icon/Phoneb.svg" alt="icon" />+38 (063) 292 48
-                06</a
-              >
+          </div>
+        </div>
+      </section>
+      <section class="platform section container">
+        <div class="platform__container row">
+          <div class="platform__wrap--text">
+            <h2>Interactive Range -</h2>
+            <p>
+              симуляционная платформа позволяющая имитировать боевые
+              кибер-тренировки для обучения в реальном времени.
+            </p>
+          </div>
+          <div class="platform__wrap--img">
+            <img src="./img/MacBook.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="whom section">
+        <p class="tab tab-deck">Для кого</p>
+        <div class="container">
+          <p class="tab tab-mob">Для кого</p>
+          <h3 class="whom__title">
+            Мы предлагаем полный спектр обучения в области кибербезопасности,
+            нацеленный на различные аудитории.
+          </h3>
+          <ul class="whom__container whom-deck row">
+            <li class="whom__item one">
+              <h3>Новичкам</h3>
+              <p>
+                Получите необходимые знания для старта успешной карьеры в
+                востребованной и быстро развивающейся области кибербезопасности.
+              </p>
             </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./img/icon/Envelopeb.svg"
-                  alt="icon"
-                />info@profenergy.com.ua</a
-              >
+            <li class="whom__item two">
+              <h3>Новичкам</h3>
+              <p>
+                Получите необходимые знания для старта успешной карьеры в
+                востребованной и быстро развивающейся области кибербезопасности.
+              </p>
             </li>
-            <li>
-              <a href="https://maps.app.goo.gl/vb2EwiMuiRdBmJtP9"
-                ><img src="./img/icon/MapPinb.svg" alt="icon" />Україна, 49112,
-                Днiпропетровська обл., мiсто Днiпро, ВУЛИЦЯ ЕЛЕКТРИЧНА, будинок
-                2</a
-              >
+            <li class="whom__item three">
+              <h3>Новичкам</h3>
+              <p>
+                Получите необходимые знания для старта успешной карьеры в
+                востребованной и быстро развивающейся области кибербезопасности.
+              </p>
+            </li>
+            <li class="whom__item four">
+              <h3>Новичкам</h3>
+              <p>
+                Получите необходимые знания для старта успешной карьеры в
+                востребованной и быстро развивающейся области кибербезопасности.
+              </p>
             </li>
           </ul>
         </div>
-      </div> -->
-    </header>
-    <main>
-      <section>
-        <button class="styled-btn">Оставить заявку</button>
+        <div class="swiper swiper-whom whom-swp">
+          <div class="whom__container row swiper-wrapper whom-swp">
+            <div class="whom__item one swiper-slide">
+              <h3>Новичкам</h3>
+              <p>
+                Получите необходимые знания для старта успешной карьеры в
+                востребованной и быстро развивающейся области кибербезопасности.
+              </p>
+            </div>
+            <div class="whom__item swiper-slide two swiper-slide">
+              <h3>Новичкам</h3>
+              <p>
+                Получите необходимые знания для старта успешной карьеры в
+                востребованной и быстро развивающейся области кибербезопасности.
+              </p>
+            </div>
+            <div class="whom__item three swiper-slide">
+              <h3>Новичкам</h3>
+              <p>
+                Получите необходимые знания для старта успешной карьеры в
+                востребованной и быстро развивающейся области кибербезопасности.
+              </p>
+            </div>
+            <div class="whom__item four swiper-slide">
+              <h3>Новичкам</h3>
+              <p>
+                Получите необходимые знания для старта успешной карьеры в
+                востребованной и быстро развивающейся области кибербезопасности.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination-wh"></div>
       </section>
+      <section class="modules section">
+        <p class="tab tab-deck">Модули</p>
+        <div class="container">
+          <h2 class="modules__title section-title">Программа обучения</h2>
+          <ul class="modules__container mod-deck row">
+            <li class="modules__item one">
+              <h4>МОДУЛЬ</h4>
+              <h3>REDTEAM</h3>
+              <h5>Основы этичного хакинга</h5>
+              <p class="text">
+                Здесь вы научитесь на практике атаковать виртуальную
+                инфраструктуру. Основная цель данного модуля показать
+                распространённые и часто встречаемые уязвимости в корпоративных
+                сетях и методы атаки на них.
+              </p>
+              <ul>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Основы Bug Bounty</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Основы Bug Bounty</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Основы Bug Bounty</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Основы Bug Bounty</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Безопасность веб-приложений</p>
+                </li>
+              </ul>
+            </li>
+            <li class="modules__item two">
+              <div class="row__sb">
+                <h3>BLUETEAM</h3>
+                <p class="lable">COMING SOON</p>
+              </div>
+              <h5>Обнаружение и реагирование на кибер-угрозы</h5>
+              <p class="text">
+                Здесь вы освоите, как защищать инфраструктуру, тестировать
+                инструменты атакующих, отслеживать актуальные методы атак и
+                отточите свои навыки их обнаружения с помощью разных
+                инструментов.
+              </p>
+              <ul>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+              </ul>
+            </li>
+            <li class="modules__item two three">
+              <div class="row__sb">
+                <h3>Цифровой анализ</h3>
+                <p class="lable">COMING SOON</p>
+              </div>
+              <p class="text">
+                Модуль на всестороннее понимание принципов и методов цифровой
+                криминалистики и анализа вредоносных программ, которые помогут
+                обеспечить Вас нужными компетенциями для защиты
+                ИТ-инфраструктуры.
+              </p>
+              <ul>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Цифровая криминалистика и реагирование на инциденты</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Анализ вредоносных программ</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper swiper-modules mod-mob">
+          <div class="modules__container swiper-wrapper">
+            <div class="modules__item one swiper-slide">
+              <h4>МОДУЛЬ</h4>
+              <h3>REDTEAM</h3>
+              <h5>Основы этичного хакинга</h5>
+              <p class="text">
+                Здесь вы научитесь на практике атаковать виртуальную
+                инфраструктуру. Основная цель данного модуля показать
+                распространённые и часто встречаемые уязвимости в корпоративных
+                сетях и методы атаки на них.
+              </p>
+              <ul>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Основы Bug Bounty</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Основы Bug Bounty</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Основы Bug Bounty</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Основы Bug Bounty</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-bl.svg" alt="icon" />
+                  <p>Безопасность веб-приложений</p>
+                </li>
+              </ul>
+            </div>
+            <div class="modules__item two swiper-slide">
+              <div class="row__sb">
+                <h3>BLUETEAM</h3>
+                <p class="lable">COMING SOON</p>
+              </div>
+              <h5>Обнаружение и реагирование на кибер-угрозы</h5>
+              <p class="text">
+                Здесь вы освоите, как защищать инфраструктуру, тестировать
+                инструменты атакующих, отслеживать актуальные методы атак и
+                отточите свои навыки их обнаружения с помощью разных
+                инструментов.
+              </p>
+              <ul>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Введение и разведка</p>
+                </li>
+              </ul>
+            </div>
+            <div class="modules__item two three swiper-slide">
+              <div class="row__sb">
+                <h3>Цифровой анализ</h3>
+                <p class="lable">COMING SOON</p>
+              </div>
+              <p class="text">
+                Модуль на всестороннее понимание принципов и методов цифровой
+                криминалистики и анализа вредоносных программ, которые помогут
+                обеспечить Вас нужными компетенциями для защиты
+                ИТ-инфраструктуры.
+              </p>
+              <ul>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Цифровая криминалистика и реагирование на инциденты</p>
+                </li>
+                <li class="row">
+                  <img src="./img/icon/CheckCircle-gr.svg" alt="icon" />
+                  <p>Анализ вредоносных программ</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination-mod"></div>
+      </section>
+      <section class="study section">
+        <div class="container">
+          <h2 class="study__title section-title">
+            Кем Вы можете стать после обучения:
+          </h2>
+          <ul class="study__container st-cont-desc row">
+            <div class="row-study-wr">
+              <li class="study__item row one">
+                <span>01</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+              <li class="study__item row two">
+                <span>02</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+              <li class="study__item row two">
+                <span>03</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+              <li class="study__item row two">
+                <span>04</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+              <li class="study__item row two">
+                <span>05</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+            </div>
+            <li class="study__item img st-img-1">
+              <img src="./img/img-step.png" alt="photo" />
+            </li>
+            <div class="row-study-wr">
+              <li class="study__item row one">
+                <span>06</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+              <li class="study__item row two">
+                <span>07</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+              <li class="study__item row two">
+                <span>08</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+              <li class="study__item row two">
+                <span>09</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+              <li class="study__item row two">
+                <span>10</span>
+                <p>Аналитик по реагированию на кибер-инциденты</p>
+              </li>
+            </div>
+          </ul>
+          <ul class="study__container st-cont-mob row">
+            <div class="row-study-wr">
+              <div class="row-study">
+                <li class="study__item one">
+                  <span>01</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+                <li class="study__item two">
+                  <span>02</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+              </div>
+              <div class="row-study">
+                <li class="study__item two">
+                  <span>03</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+                <li class="study__item two">
+                  <span>04</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+              </div>
+            </div>
+            <li class="study__item img st-img-2">
+              <img src="./img/img-step.png" alt="photo" />
+            </li>
+            <div class="row-study-wr">
+              <div class="row-study">
+                <li class="study__item two">
+                  <span>05</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+                <li class="study__item one">
+                  <span>06</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+              </div>
+              <div class="row-study">
+                <li class="study__item two">
+                  <span>07</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+                <li class="study__item two">
+                  <span>08</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+              </div>
+              <div class="row-study">
+                <li class="study__item two">
+                  <span>09</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+                <li class="study__item two">
+                  <span>10</span>
+                  <p>Аналитик по реагированию на кибер-инциденты</p>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </section>
+      <section class="step section">
+        <div class="container">
+          <h2 class="step__title section-title">Как проходит обучение:</h2>
+          <ul class="step__container step-deck row">
+            <li class="step__item one">
+              <div class="step__item--wrap row">
+                <img src="./img/icon/NumberCircleOne.svg" alt="icon" />
+                <h3>Теория:</h3>
+              </div>
+              <p>
+                Обучаетесь на основе видео и текстового материала, которые
+                содержат наглядные примеры и минимальное количество лишней
+                информации.
+              </p>
+            </li>
+            <li class="step__item one">
+              <div class="step__item--wrap row">
+                <img src="./img/icon/NumberCircleTwo.svg" alt="icon" />
+                <h3>Теория:</h3>
+              </div>
+              <p>
+                Обучаетесь на основе видео и текстового материала, которые
+                содержат наглядные примеры и минимальное количество лишней
+                информации.
+              </p>
+            </li>
+            <li class="step__item one">
+              <div class="step__item--wrap row">
+                <img src="./img/icon/NumberCircleThree.svg" alt="icon" />
+                <h3>Теория:</h3>
+              </div>
+              <p>
+                Обучаетесь на основе видео и текстового материала, которые
+                содержат наглядные примеры и минимальное количество лишней
+                информации.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper swiper-step step-mob">
+          <div class="step__container swiper-wrapper">
+            <div class="step__item one swiper-slide">
+              <div class="step__item--wrap row">
+                <img src="./img/icon/NumberCircleOne.svg" alt="icon" />
+                <h3>Теория:</h3>
+              </div>
+              <p>
+                Обучаетесь на основе видео и текстового материала, которые
+                содержат наглядные примеры и минимальное количество лишней
+                информации.
+              </p>
+            </div>
+            <div class="step__item one swiper-slide">
+              <div class="step__item--wrap row">
+                <img src="./img/icon/NumberCircleTwo.svg" alt="icon" />
+                <h3>Теория:</h3>
+              </div>
+              <p>
+                Обучаетесь на основе видео и текстового материала, которые
+                содержат наглядные примеры и минимальное количество лишней
+                информации.
+              </p>
+            </div>
+            <div class="step__item one swiper-slide">
+              <div class="step__item--wrap row">
+                <img src="./img/icon/NumberCircleThree.svg" alt="icon" />
+                <h3>Теория:</h3>
+              </div>
+              <p>
+                Обучаетесь на основе видео и текстового материала, которые
+                содержат наглядные примеры и минимальное количество лишней
+                информации.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination-step"></div>
+        </div>
+      </section>
+      <section class="advantages section container">
+        <div class="advantages__container">
+          <h2>Преимущества обучения на платформе Interactive Range: </h2>
+          <div class="adv-row row">
+            <div class="advantages__wrap--text">
+              <img class="vector" src="./img/icon/Vector.svg" alt="icon" />
+              <ul class="advantages__list">
+                <li class="advantages__item row one">
+                  <span>01</span>
+                  <p>Более 75 готовых готовых сценариев кибератак;</p>
+                </li>
+                <li class="advantages__item row">
+                  <span>02</span>
+                  <p>Доступ к платформе 24/7 из любой точки мира;</p>
+                </li>
+                <li class="advantages__item row">
+                  <span>03</span>
+                  <p>Курсы для всех уровней: от новичков до экспертов;</p>
+                </li>
+                <li class="advantages__item row">
+                  <span>04</span>
+                  <p>
+                    Круглосуточная поддержка и отслеживание прогресса куратором;
+                  </p>
+                </li>
+                <li class="advantages__item row">
+                  <span>05</span>
+                  <p>Discord чат и активное комьюнити;</p>
+                </li>
+                <li class="advantages__item row">
+                  <span>06</span>
+                  <p>
+                    Облачные технологии для быстрого создания и запуска
+                    сценариев.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="advantages__wrap--img">
+              <img src="./img/MacBookAir.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form-1 section container">
+        <div class="form-1__container row__sb">
+          <div class="form-1__wrap--text">
+            <h2>Оставьте заявку</h2>
+            <p>и мы свяжемся с вами как можно скорее</p>
+            <img class="form-1-img-mob" src="./img/img-form.jpg" alt="" />
+            <div class="form-1__form">
+              <form action="#">
+                <input type="text" placeholder="Имя" />
+                <input type="text" placeholder="Номер телефона" />
+                <button class="btn form-1-btn">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
+          <div class="form-1__wrap--img">
+            <img src="./img/img-form.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="faq section">
+        <div class="faq__container container">
+          <h2>Frequently AskedQuestions</h2>
+          <ul class="faq__list" id="accordeon">
+            <li class="faq__item">
+              <div class="faq__title1 acc-head row__sb">
+                <h3>В каком формате проходит обучение?</h3>
+                <div>
+                  <button type="button" class="faq-img faq-open1">
+                    <img src="./img/icon/PlusCircle.svg" alt="іконка" />
+                  </button>
+                  <button type="button" class="faq-img faq-closed1 is-hidden">
+                    <img src="./img/icon/MinusCircle.svg" alt="іконка" />
+                  </button>
+                </div>
+              </div>
+              <p class="faq__text1 is-hidden acc-body">
+                Обучение проходит онлайн на базе нашего киберполигона. Для
+                подключения Вам требуется лишь ноутбук/ПК и доступ к браузеру.
+              </p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__title1 acc-head row__sb">
+                <h3>В каком формате проходит обучение?</h3>
+                <div>
+                  <button type="button" class="faq-img faq-open1">
+                    <img src="./img/icon/PlusCircle.svg" alt="іконка" />
+                  </button>
+                  <button type="button" class="faq-img faq-closed1 is-hidden">
+                    <img src="./img/icon/MinusCircle.svg" alt="іконка" />
+                  </button>
+                </div>
+              </div>
+              <p class="faq__text1 is-hidden acc-body">
+                Обучение проходит онлайн на базе нашего киберполигона. Для
+                подключения Вам требуется лишь ноутбук/ПК и доступ к браузеру.
+              </p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__title1 acc-head row__sb">
+                <h3>В каком формате проходит обучение?</h3>
+                <div>
+                  <button type="button" class="faq-img faq-open1">
+                    <img src="./img/icon/PlusCircle.svg" alt="іконка" />
+                  </button>
+                  <button type="button" class="faq-img faq-closed1 is-hidden">
+                    <img src="./img/icon/MinusCircle.svg" alt="іконка" />
+                  </button>
+                </div>
+              </div>
+              <p class="faq__text1 is-hidden acc-body">
+                Обучение проходит онлайн на базе нашего киберполигона. Для
+                подключения Вам требуется лишь ноутбук/ПК и доступ к браузеру.
+              </p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__title1 acc-head row__sb">
+                <h3>В каком формате проходит обучение?</h3>
+                <div>
+                  <button type="button" class="faq-img faq-open1">
+                    <img src="./img/icon/PlusCircle.svg" alt="іконка" />
+                  </button>
+                  <button type="button" class="faq-img faq-closed1 is-hidden">
+                    <img src="./img/icon/MinusCircle.svg" alt="іконка" />
+                  </button>
+                </div>
+              </div>
+              <p class="faq__text1 is-hidden acc-body">
+                Обучение проходит онлайн на базе нашего киберполигона. Для
+                подключения Вам требуется лишь ноутбук/ПК и доступ к браузеру.
+              </p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__title1 acc-head row__sb">
+                <h3>В каком формате проходит обучение?</h3>
+                <div>
+                  <button type="button" class="faq-img faq-open1">
+                    <img src="./img/icon/PlusCircle.svg" alt="іконка" />
+                  </button>
+                  <button type="button" class="faq-img faq-closed1 is-hidden">
+                    <img src="./img/icon/MinusCircle.svg" alt="іконка" />
+                  </button>
+                </div>
+              </div>
+              <p class="faq__text1 is-hidden acc-body">
+                Обучение проходит онлайн на базе нашего киберполигона. Для
+                подключения Вам требуется лишь ноутбук/ПК и доступ к браузеру.
+              </p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__title1 acc-head row__sb">
+                <h3>В каком формате проходит обучение?</h3>
+                <div>
+                  <button type="button" class="faq-img faq-open1">
+                    <img src="./img/icon/PlusCircle.svg" alt="іконка" />
+                  </button>
+                  <button type="button" class="faq-img faq-closed1 is-hidden">
+                    <img src="./img/icon/MinusCircle.svg" alt="іконка" />
+                  </button>
+                </div>
+              </div>
+              <p class="faq__text1 is-hidden acc-body">
+                Обучение проходит онлайн на базе нашего киберполигона. Для
+                подключения Вам требуется лишь ноутбук/ПК и доступ к браузеру.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="tech section">
+        <div class="container">
+          <h2 class="tech__title section-title">Изучаемые технологии:</h2>
+          <div class="tech__marquee">
+            <ul class="tech__container row">
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one">
+                <p>OSINT</p>
+              </li>
+            </ul>
+          </div>
+           <div class="tech__marquee swiper swiper-tech">
+            <div class="tech__container row swiper-wrapper tech-1">
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li> 
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>           
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>
+            </div>
+             <div class="tech__container row swiper-wrapper">
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li> 
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>           
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>
+              <li class="tech__item one swiper-slide">
+                <p>OSINT</p>
+              </li>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="about section">
+        <div class="container">
+          <h2 class="about__title section-title">О компании</h2>
+          <div class="about__container">
+            <p class="about__text-deck">
+              В 2019 году группа экспертов в области кибербезопасности создала
+              компанию Cyberlabs, чтобы решить проблему нехватки
+              квалифицированных кадров в отечественной сфере информационной
+              безопасности и обеспечить их развитие.<br /><br />
+              Миссия компании - создание киберполигона, позволяющего получить
+              практические навыки в области кибербезопасности и подготовить
+              конкурентоспособных специалистов на мировом рынке.<br />
+              Наша компания во главе со специалистами со стажем в информационной
+              безопасности более 10 лет, является резидентом международного
+              технопарка IT-стартапов «Astana Hub».<br /><br />
+              А также, является почетным участником программы, направленной на
+              развитие человеческого капитала в IT сфере «Tech Orda».
+            </p>
+            <!-- <div class="about__text-mob" id="accordeon2">
+              <div class="acct1-head">
+                <p>
+                  В 2019 году группа экспертов в области кибербезопасности
+                  создала компанию Cyberlabs, чтобы решить проблему нехватки
+                  квалифицированных кадров в отечественной сфере информационной
+                  безопасности и обеспечить их развитие.<br /><br />
+                  Миссия компании - создание киберполигона, позволяющего
+                  получить практические навыки в области кибербезопасности и
+                  подготовить конкурентоспособных специалистов на мировом
+                  рынке.<br />
+                </p>
+              </div>
+              <button type="button" class="faq-img faq-open2">
+                <img src="./img/icon/PlusCircle.svg" alt="іконка" />
+              </button>
+              <button type="button" class="faq-img faq-closed2 is-hidden">
+                <img src="./img/icon/MinusCircle.svg" alt="іконка" />
+              </button>
+              <div class="acct1-body is-hidden">
+                <p>
+                  Наша компания во главе со специалистами со стажем в
+                  информационной безопасности более 10 лет, является резидентом
+                  международного технопарка IT-стартапов «Astana Hub».<br /><br />
+                  А также, является почетным участником программы, направленной
+                  на развитие человеческого капитала в IT сфере «Tech Orda».
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="sert section">
+        <div class="container">
+          <h2 class="sert__title section-title">Наши сертификаты</h2>
+          <div class="sert__marquee sert-deck">
+            <ul class="sert__container row">
+              <li class="sert__item">
+                <img src="./img/icon/sert-1.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-2.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-3.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-4.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-5.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-6.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-7.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-8.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-9.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-10.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-11.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-12.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-13.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-14.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-15.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-16.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-17.svg" alt="icon" />
+              </li>
+              <li class="sert__item">
+                <img src="./img/icon/sert-18.svg" alt="icon" />
+              </li>
+            </ul>
+          </div>
+          <div class="sert__marquee swiper swiper-sert">
+            <div class="sert__container row swiper-wrapper">
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-1.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-2.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-3.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-4.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-5.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-6.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-7.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-8.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-9.svg" alt="icon" />
+              </div>              
+            </div>
+            <div class="sert__marquee swiper swiper-sert">
+            <div class="sert__container row swiper-wrapper">
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-10.svg" alt="icon" />
+              </div>
+               <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-11.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-12.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-13.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-14.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-15.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-16.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-17.svg" alt="icon" />
+              </div>
+              <div class="sert__item swiper-slide">
+                <img src="./img/icon/sert-18.svg" alt="icon" />
+              </div>                      
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wcomp section container">
+        <div class="wcomp__container">
+          <h2 class="wcomp__title section-title">
+            Компании, в которых работают наши выпускники:
+          </h2>
+          <ul class="wcomp__list row">
+            <li class="wcomp__item one">
+              <div class="row">
+                <img src="./img/icon/comp1.svg" alt="icon" />
+                <p>ГТС</p>
+              </div>
+            </li>
+            <li class="wcomp__item one">
+              <div class="row">
+                <img src="./img/icon/comp2.svg" alt="icon" />
+                <p>Tesla</p>
+              </div>
+            </li>
+            <li class="wcomp__item one">
+              <div class="row">
+                <img src="./img/icon/comp3.svg" alt="icon" />
+                <p>Arista</p>
+              </div>
+            </li>
+            <li class="wcomp__item one">
+              <div class="row">
+                <img src="./img/icon/comp4.svg" alt="icon" />
+                <p>epam</p>
+              </div>
+            </li>
+            <li class="wcomp__item one">
+              <div class="row">
+                <img src="./img/icon/comp5.svg" alt="icon" />
+                <p>КТЖ</p>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper swiper-wcomp">
+            <div class="wcomp__list swiper-wrapper">
+            <div class="wcomp__item one swiper-slide">
+              <div class="row">
+                <img src="./img/icon/comp1.svg" alt="icon" />
+                <p>ГТС</p>
+              </div>
+            </div>
+            <div class="wcomp__item one swiper-slide">
+              <div class="row">
+                <img src="./img/icon/comp2.svg" alt="icon" />
+                <p>Tesla</p>
+              </div>
+            </div>
+            <div class="wcomp__item one swiper-slide">
+              <div class="row">
+                <img src="./img/icon/comp3.svg" alt="icon" />
+                <p>Arista</p>
+              </div>
+            </div>
+            <div class="wcomp__item one swiper-slide">
+              <div class="row">
+                <img src="./img/icon/comp4.svg" alt="icon" />
+                <p>epam</p>
+              </div>
+            </div>
+            <div class="wcomp__item one swiper-slide">
+              <div class="row">
+                <img src="./img/icon/comp5.svg" alt="icon" />
+                <p>КТЖ</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="form-2 section container">
+        <div class="form-2__container">
+          <h2>Оставьте заявку</h2>
+          <p>и мы свяжемся с вами как можно скорее</p>
+          <div class="form-2__form">
+            <form action="#">
+              <input type="text" placeholder="Имя" />
+              <input type="text" placeholder="Номер телефона" />
+              <button class="btn form-2-btn">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer" id="contacts-id">
+        <div class="container">
+          <div class="footer-wrap">
+            <div class="footer-wrap-in">
+              <div class="footer-one">
+                <div class="footer-logo logo">
+                  <a href="/"><img src="/img/logo.svg" alt="logo" /></a>
+                </div>
+                <p class="footer-subtitle">
+                  Получите практические навыки в области информационной
+                  безопасности
+                </p>
+              </div>
+              <nav class="footer-wrap-el footer-wr-2">
+                <ul class="footer-list footer-menu-list">
+                  <li><a href="/">Модуль</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="/#">О компании</a></li>
+                </ul>
+              </nav>
+              <div class="footer-wrap-el footer-wr-3">
+                <ul class="footer-list footer-list-two">
+                  <li class="row">
+                    <img src="./img/icon/Phone.svg" alt="icon" /><a
+                      href="tel:+87004700808"
+                      >87004700808</a
+                    >
+                  </li>
+                  <li class="row">
+                    <img src="./img/icon/Email.svg" alt="icon" />
+                    <a href="email:sales@cyberlabs.kz"> sales@cyberlabs.kz</a>
+                  </li>
+                  <li>
+                    <ul class="footer-soс row">
+                      <li class="krasiva-animatsiya-knopki">
+                        <a href="#"
+                          ><img src="/img/icon/TelegramLogo.svg" alt="icon"
+                        /></a>
+                      </li>
+                      <li class="krasiva-animatsiya-knopki">
+                        <a href="#"
+                          ><img src="/img/icon/WhatsappLogo.svg" alt="icon"
+                        /></a>
+                      </li>
+                      <li class="krasiva-animatsiya-knopki">
+                        <a href="#"
+                          ><img src="/img/icon/InstagramLogo.svg" alt="icon"
+                        /></a>
+                      </li>
+                      <li class="krasiva-animatsiya-knopki">
+                        <a href="#"
+                          ><img src="/img/icon/TiktokLogo.svg" alt="icon"
+                        /></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-wr-mob">
+                <div class="row__sb">
+                  <nav class="footer-wrap-el">
+                    <ul class="footer-list footer-menu-list">
+                      <li><a href="/">Модуль</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="/#">О компании</a></li>
+                    </ul>
+                  </nav>
+                  <div class="footer-wrap-el">
+                    <ul class="footer-list footer-list-two">
+                      <li class="row">
+                        <img src="./img/icon/Phone.svg" alt="icon" /><a
+                          href="tel:+87004700808"
+                          >87004700808</a
+                        >
+                      </li>
+                      <li class="row">
+                        <img src="./img/icon/Email.svg" alt="icon" />
+                        <a href="email:sales@cyberlabs.kz">
+                          sales@cyberlabs.kz</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <ul class="footer-soс row">
+                  <li class="krasiva-animatsiya-knopki">
+                    <a href="#"
+                      ><img src="/img/icon/TelegramLogo.svg" alt="icon"
+                    /></a>
+                  </li>
+                  <li class="krasiva-animatsiya-knopki">
+                    <a href="#"
+                      ><img src="/img/icon/WhatsappLogo.svg" alt="icon"
+                    /></a>
+                  </li>
+                  <li class="krasiva-animatsiya-knopki">
+                    <a href="#"
+                      ><img src="/img/icon/InstagramLogo.svg" alt="icon"
+                    /></a>
+                  </li>
+                  <li class="krasiva-animatsiya-knopki">
+                    <a href="#"
+                      ><img src="/img/icon/TiktokLogo.svg" alt="icon"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="copy row">
+              <img src="./img/icon/Copyright.svg" alt="icon" />
+              <p>All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
     <script type="module" src="./js/script.js"></script>
-    <script type="module" src="./js/swiper.js"></script>
+    <!-- <script type="module" src="./js/swiper.js"></script> -->
   </body>
 </html>

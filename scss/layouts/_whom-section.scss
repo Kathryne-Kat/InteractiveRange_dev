@@ -1,0 +1,119 @@
+.whom {
+  position: relative;
+  & .tab {
+    position: absolute;
+    left: 0;
+    top: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    & .tab-deck {
+      display: none;
+    }
+  }
+  & .tab-mob {
+    display: none;
+    @media screen and (max-width: 768px) {
+      position: static;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+    }
+  }
+  &__title {
+    font-family: $second-family;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 36px;
+    font-weight: 400;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+  }
+  &__container {
+    gap: 16px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      display: block;
+      gap: 0;
+      flex-wrap: nowrap;
+    }
+  }
+  &__item {
+    width: 303px;
+    height: 340px;
+    padding: 36px 20px;
+    background-repeat: no-repeat;
+    & h3 {
+      font-family: $second-family;
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    & p {
+      font-size: 18px;
+      line-height: 150%;
+      max-width: 290px;
+      width: 100%;
+    }
+    &.one {
+      background-image: url(/img/Новичкам.png);
+      color: $primary-color;
+    }
+    &.two {
+      background-image: url(/img/СпециалистамIT.png);
+      padding-top: 130px;
+    }
+    &.three {
+      background-image: url(/img/СпециалистамИБ.png);
+      color: $primary-color;
+    }
+    &.four {
+      background-image: url(/img/Компаниям.png);
+      padding-top: 130px;
+    }
+  }
+}
+.swiper-whom.whom-swp {
+  display: none;
+}
+.swiper-pagination-wh.swiper-pagination-bullets {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .whom-deck.row {
+    display: none;
+  }
+  .swiper-whom.whom-swp {
+    display: block;
+  }
+  .swiper.swiper-whom {
+    // width: 770px;
+    width: 100%;
+    height: 345px;
+  }
+  .whom__item.swiper-slide {
+    width: 303px;
+    height: 340px;
+  }
+  .swiper-pagination-wh.swiper-pagination-bullets {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .swiper-pagination-wh .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background: #9e9e9e;
+    color: #6c6c6c;
+  }
+  .swiper-pagination-wh .swiper-pagination-bullet-active {
+    background: $accent-color-2;
+    width: 25px;
+    border-radius: 48px;
+  }
+}

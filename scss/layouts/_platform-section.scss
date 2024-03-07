@@ -1,0 +1,107 @@
+.platform {
+  position: relative;
+  &__wrap--text {
+    width: 40%;
+    @media screen and (max-width: 768px) {
+      max-width: 400px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      & h2 {
+        text-align: center;
+      }
+      & p {
+        text-align: center;
+      }
+    }
+  }
+  &__wrap--img {
+    width: 60%;
+    & img {
+      position: absolute;
+      top: 0;
+      right: -40px;
+      width: 910px;
+      @media screen and (max-width: 1440px) {
+        width: 62vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100vw;
+        top: auto;
+        bottom: -20px;
+        left: 45%;
+        transform: translateX(-50%);
+      }
+      @media screen and (max-width: 560px) {
+        width: 100vw;
+      }
+      @media screen and (max-width: 480px) {
+        left: 41%;
+        width: 120vw;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.platform__container {
+  // background-image: url(/img/Ellipse-1.svg);
+  background-image: url(/img/group_sec1-all.svg);
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  height: 595px;
+  padding: 40px 0 40px 40px;
+  backdrop-filter: blur(160px);
+  border: 1px solid #f0fc8618;
+  @media screen and (max-width: 1440px) {
+    height: 550px;
+  }
+  @media screen and (max-width: 1200px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 980px) {
+    height: 370px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 650px;
+    justify-content: start;
+    padding: 80px 20px 40px 20px;
+  }
+  @media screen and (max-width: 560px) {
+    height: 520px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 590px;
+    background-image: url(/img/bg-mob-pl-3.svg);
+    background-size: contain;
+    border-radius: 50px;
+    padding: 70px 10px 40px 10px;
+    // border: none;
+  }
+  @media screen and (max-width: 400px) {
+    height: 540px;
+  }
+  & h2 {
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 150%;
+    margin-bottom: 16px;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  & p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+}

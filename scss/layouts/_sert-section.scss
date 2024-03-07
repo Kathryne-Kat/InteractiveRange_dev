@@ -1,0 +1,63 @@
+.sert {
+  &__container {
+    gap: 36px;
+    flex-wrap: wrap; /* Гарантирует, что иконки останутся в одной строке */
+    @media screen and (max-width: 768px) {
+      display: block;
+      flex-wrap: nowrap;
+      gap: 10px;
+    }
+  }
+
+  &__item {
+    width: max-content;
+    & img {
+      height: 45px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100px;
+    }
+  }
+}
+.swiper.swiper-sert {
+  width: 100%;
+}
+.sert__item.swiper-slide {
+  // width: 50px;
+  width: max-content;
+}
+@media screen and (max-width: 768px) {
+  .sert-deck {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sert__container {
+    flex-wrap: nowrap; /* Гарантирует, что иконки останутся в одной строке */
+    overflow: hidden; /* Скрывает иконки, выходящие за пределы контейнера */
+  }
+  .sert__marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .sert__container {
+    display: flex;
+    animation: marquee 10s linear infinite;
+  }
+
+  .sert__item {
+    margin-right: 20px; /* Расстояние между логотипами, по желанию */
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}

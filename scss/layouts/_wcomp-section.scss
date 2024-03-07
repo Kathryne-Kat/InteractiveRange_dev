@@ -1,0 +1,63 @@
+.wcomp {
+  &__container {
+    background-image: url(/img/wcomp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 24px 67px;
+    @media screen and (max-width: 768px) {
+      padding: 24px 0;
+    }
+    & h2 {
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 24px;
+      width: 470px;
+      text-align-last: left;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+        text-align: center;
+        max-width: 375px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  &__list {
+    gap: 16px;
+    // flex-wrap: wrap;
+    @media screen and (max-width: 480px) {
+      gap: 0;
+    }
+  }
+  &__item {
+    width: 195px;
+    & div {
+      border-radius: 60px;
+      padding: 16px 0px;
+      text-align: center;
+      background: $primary-text-color;
+    }
+    & p {
+      padding-left: 10px;
+      text-align: center;
+      font-family: $second-family;
+      font-weight: 700;
+      font-size: 16px;
+      color: $primary-color;
+    }
+  }
+}
+.swiper.swiper-wcomp {
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .wcomp.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .wcomp__item.swiper-slide {
+    width: 195px;
+  }
+}

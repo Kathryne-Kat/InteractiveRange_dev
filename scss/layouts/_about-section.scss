@@ -1,0 +1,15 @@
+.about {
+  &__container {
+    & p {
+      font-size: 20px;
+      line-height: 150%;
+      column-count: 2;
+      @media screen and (max-width: 1024px) {
+        column-count: 1;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

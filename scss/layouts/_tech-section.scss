@@ -1,0 +1,58 @@
+.tech {
+  &__container {
+    gap: 16px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      gap: 0;
+    }
+  }
+  &__item {
+    width: 195px;
+    & p {
+      border-radius: 60px;
+      padding: 16px 0px;
+      text-align: center;
+      background: $accent-color-2;
+    }
+  }
+}
+.tech__item.swiper-slide {
+  width: 195px;
+}
+.tech__container.tech-1 {
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  .tech {
+    &__marquee {
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &__container {
+      display: inline-flex;
+      animation: marquee 30s linear infinite; /* Увеличиваем продолжительность анимации */
+      justify-content: space-around;
+    }
+
+    &__item {
+      margin-right: 5px; /* Расстояние между элементами, по желанию */
+    }
+
+    &__item:last-child {
+      margin-right: 0; /* Убираем отступ после последнего элемента */
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  }
+  .tech__container {
+    flex-wrap: nowrap; /* Отключаем перенос элементов на новую строку */
+  }
+}
