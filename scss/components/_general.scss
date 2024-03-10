@@ -5,23 +5,51 @@ body {
   font-size: 18px;
   color: $primary-text-color;
   background-color: $primary-color;
-  background-image: url(/img/bg-1.jpg), url(/img/bg-4.jpg), url(/img/bg-4.jpg),
-    url(/img/bg-5.jpg);
-  background-position: left 0 top -50px, left 0 top 2000px, left 0 top 4500px,
-    left 0 top 5700px;
+  background-image: url(/img/bg-1.jpg), url(/img/bg-4.jpg), url(/img/bg-5.jpg),
+    url(/img/bg-4.jpg), url(/img/bg-5.jpg);
+  background-position: left 0 top -50px, left 0 top 1300px, left 0 top 2500px,
+    left 0 top 4500px, left 0 top 5700px;
   background-repeat: no-repeat;
-  background-size: 100%, 100%, 100%, 100%, 100%;
+  background-size: 100%, 100%, 100%, 100%, 100%, 100%;
   line-height: normal;
-
   .no-scroll {
     overflow: hidden;
   }
   a {
     color: $primary-text-color;
+  }
+  @media screen and (max-width: 1200px) {
+    background-image: url(/img/bg-1.jpg), url(/img/bg-4.jpg), url(/img/bg-5.jpg),
+      url(/img/bg-4.jpg), url(/img/bg-5.jpg);
+    background-position: left 0 top -50px, left 0 top 1550px, left 0 top 2500px,
+      left 0 top 5000px, left 0 top 6800px;
+  }
 
-    &:hover {
-      // color: var(--accent-color);
-    }
+  @media screen and (max-width: 768px) {
+    background-image: url(/img/bgm-2.jpg), url(/img/bgm-1.jpg),
+      url(/img/bgm-3.jpg), url(/img/bgm-4.jpg), url(/img/bgm-5.jpg),
+      url(/img/bgm-6.jpg), url(/img/bgm-7.jpg), url(/img/bgm-8.jpg),
+      url(/img/bgm-9-10.jpg);
+    // background-image: url(/img/bgm-1.svg), url(/img/bgm-2.svg),
+    //   url(/img/bgm-3.svg), url(/img/bgm-4.svg), url(/img/bgm-5.svg),
+    //   url(/img/bgm-6.svg), url(/img/bgm-7.svg), url(/img/bgm-8.svg),
+    //   url(/img/bgm-9.svg), url(/img/bgm-10.svg);
+    background-position: right -30px top 350px, left 0 top 0, left 0 top 1000px,
+      left 0 top 2560px, right 0 top 3550px, right 0 top 5250px,
+      left 0 top 6000px, right 0 top 6500px, left 0 top 7300px;
+    background-size: 70%, 80%, 80%, 80%, 80%, 60%, 50%, 70%, 40%;
+  }
+  @media screen and (max-width: 570px) {
+    background-position: right 0px top 450px, left 0 top 0, left 0 top 950px,
+      left 0 top 2500px, left 0 top 3550px, right 0 top 5200px,
+      left 0 top 6000px, right 0 top 6400px, left 0 top 7000px;
+    background-size: 100%, 100%, 100%, 100%, 100%, 70%, 60%, 60%, 60%;
+  }
+  @media screen and (max-width: 480px) {
+    background-position: right 0px top 450px, left 0 top 0, left 0 top 950px,
+      left 0 top 2660px, left 0 top 3550px, right 0 top 5300px,
+      left 0 top 6100px, right 0 top 6550px, left 0 top 7200px;
+    background-size: 100%, 100%, 100%, 100%, 100%, 90%, 70%, 70%, 60%;
   }
 }
 @media screen and (max-width: 860px) {
@@ -103,7 +131,7 @@ body {
   line-height: 150%;
   @media screen and (max-width: 768px) {
     font-size: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 }
 .title-item {

@@ -1,9 +1,7 @@
 $(document).ready(function () {
   //прикрепляем клик по заголовкам acc-head
   $("#accordeon .acc-head").on("click", f_acc);
-  $("#accordeon2 .acct1-head").on("click", f_acct1); 
-//   $("#accordeon-menu-mob .accm1-head").on("click", f_accm2);
-//   $("#accordeon-menu-mob2 .accm2-head").on("click", f_accm3);   
+  
 });
 
 function f_acc() {
@@ -14,14 +12,13 @@ function f_acc() {
   $("#accordeon .faq-open1").toggleClass("is-hidden");
   $("#accordeon .faq-closed1").toggleClass("is-hidden");
 }
-function f_acct1() {
-  //скрываем все кроме того, что должны открыть
-  $("#accordeon2 .acct1-body").not($(this).next()).slideUp(100);
-  // открываем или скрываем блок под заголовоком, по которому кликнули
-  $(this).next().slideToggle(100);
-  $("#accordeon2 .faq-open2").toggleClass("is-hidden");
-  $("#accordeon2 .faq-closed2").toggleClass("is-hidden");
-}
+
+$(document).ready(function() {
+    $(".expandable-text").click(function() {
+      $(".hidden-text").slideToggle();
+      $(".visible-text").toggleClass("transp");
+    });
+});
 
 $(document).ready(function () {
   $(".header-burger").on("click", function () {
@@ -60,14 +57,14 @@ const swiper2 = new Swiper(".swiper-modules", {
       speed: 500,
       grabCursor: true,
       slidesPerView: "auto",
-      spaceBetween: 20,
+      spaceBetween: 5,
       pagination: {
         el: '.swiper-pagination-step',
       },  
   });
-const swiper4 = new Swiper(".swiper-sert", { 
+const swiper4 = new Swiper(".swiper-sert-1", { 
     autoplay: {
-      delay: 2000,
+      delay: 1000,
     },
       loop: true,
       rewind: true,
@@ -76,9 +73,20 @@ const swiper4 = new Swiper(".swiper-sert", {
       slidesPerView: "auto",
       spaceBetween: 40,     
 });
-const swiper5 = new Swiper(".swiper-tech", { 
+const swiper5 = new Swiper(".swiper-sert-2", { 
     autoplay: {
-      delay: 2000,
+      delay: 1000,
+    },
+      loop: true,
+      rewind: true,
+      speed: 1000,
+      grabCursor: true,
+      slidesPerView: "auto",
+      spaceBetween: 40,     
+});
+const swiper6 = new Swiper(".swiper-tech-1", { 
+    autoplay: {
+      delay: 1000,
     },
       loop: true,
       rewind: true,
@@ -87,9 +95,9 @@ const swiper5 = new Swiper(".swiper-tech", {
       slidesPerView: "auto",
       spaceBetween: 16,     
 });
-const swiper6 = new Swiper(".swiper-wcomp", { 
+const swiper7 = new Swiper(".swiper-tech-2", { 
     autoplay: {
-      delay: 2000,
+      delay: 1000,
     },
       loop: true,
       rewind: true,
@@ -98,3 +106,15 @@ const swiper6 = new Swiper(".swiper-wcomp", {
       slidesPerView: "auto",
       spaceBetween: 16,     
 });
+const swiper8 = new Swiper(".swiper-wcomp", { 
+    autoplay: {
+      delay: 1000,
+    },
+      loop: true,
+      rewind: true,
+      speed: 1000,
+      grabCursor: true,
+      slidesPerView: "auto",
+      spaceBetween: 16,     
+});
+

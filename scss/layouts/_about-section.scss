@@ -7,9 +7,46 @@
       @media screen and (max-width: 1024px) {
         column-count: 1;
       }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 560px) {
         font-size: 14px;
       }
+    }
+  }
+  @media screen and (max-width: 560px) {
+    &__text-deck {
+      display: none;
+    }
+  }
+}
+
+.about__text-mob {
+  display: none;
+  @media screen and (max-width: 560px) {
+    display: block;
+  }
+  & .btn-down {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    background-color: transparent;
+  }
+  & .expandable-text {
+    position: relative;
+    cursor: pointer;
+  }
+  & .hidden-text {
+    display: none;
+  }
+  & .visible-text {
+    &.transp {
+      font-weight: 500;
+      background: linear-gradient(
+        to bottom,
+        rgb(255, 255, 255) 50%,
+        rgba(189, 189, 189, 0) 100%
+      );
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
 }

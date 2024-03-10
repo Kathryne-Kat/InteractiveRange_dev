@@ -1,9 +1,9 @@
 .sert {
   &__container {
-    gap: 36px;
+    gap: 36px 55px;
     flex-wrap: wrap; /* Гарантирует, что иконки останутся в одной строке */
     @media screen and (max-width: 768px) {
-      display: block;
+      // display: block;
       flex-wrap: nowrap;
       gap: 10px;
     }
@@ -19,45 +19,56 @@
     }
   }
 }
-.swiper.swiper-sert {
+.swiper.swiper-sert-1,
+.swiper.swiper-sert-2 {
   width: 100%;
+  display: none;
 }
 .sert__item.swiper-slide {
   // width: 50px;
   width: max-content;
+  // width: 100px;
 }
 @media screen and (max-width: 768px) {
+  .swiper.swiper-sert-1,
+  .swiper.swiper-sert-2 {
+    width: 100%;
+    display: block;
+  }
   .sert-deck {
     display: none;
   }
+  .swiper-sert-1 {
+    margin-bottom: 36px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .sert__container {
-    flex-wrap: nowrap; /* Гарантирует, что иконки останутся в одной строке */
-    overflow: hidden; /* Скрывает иконки, выходящие за пределы контейнера */
-  }
-  .sert__marquee {
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-  }
+  // .sert__container {
+  //   flex-wrap: nowrap; /* Гарантирует, что иконки останутся в одной строке */
+  //   overflow: hidden; /* Скрывает иконки, выходящие за пределы контейнера */
+  // }
+  // .sert__marquee {
+  //   white-space: nowrap;
+  //   overflow: hidden;
+  //   width: 100%;
+  // }
 
-  .sert__container {
-    display: flex;
-    animation: marquee 10s linear infinite;
-  }
+  // .sert__container {
+  //   display: flex;
+  //   animation: marquee 10s linear infinite;
+  // }
 
-  .sert__item {
-    margin-right: 20px; /* Расстояние между логотипами, по желанию */
-  }
+  // .sert__item {
+  //   margin-right: 20px; /* Расстояние между логотипами, по желанию */
+  // }
 
-  @keyframes marquee {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
+  // @keyframes marquee {
+  //   from {
+  //     transform: translateX(0%);
+  //   }
+  //   to {
+  //     transform: translateX(-100%);
+  //   }
+  // }
 }
