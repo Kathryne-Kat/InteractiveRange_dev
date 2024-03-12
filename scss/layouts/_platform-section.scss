@@ -48,7 +48,7 @@
 
 .platform__container {
   // background-image: url(/img/Ellipse-1.svg);
-  background-image: url(./img/group_sec1-all.svg);
+  background-image: url(../img/group_sec1-all.svg);
   background-repeat: no-repeat;
   border-radius: 25px;
   height: 595px;
@@ -75,7 +75,7 @@
   }
   @media screen and (max-width: 480px) {
     height: 590px;
-    background-image: url(./img/bg-mob-pl-3.svg);
+    background-image: url(../img/bg-mob-pl-3.svg);
     background-size: contain;
     border-radius: 50px;
     padding: 70px 10px 40px 10px;

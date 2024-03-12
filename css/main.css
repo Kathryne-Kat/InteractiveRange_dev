@@ -109,7 +109,7 @@ body {
   font-size: 18px;
   color: #ffffff;
   background-color: #111111;
-  background-image: url(./img/bg-1.jpg), url(./img/bg-4.jpg), url(./img/bg-5.jpg), url(./img/bg-4.jpg), url(./img/bg-5.jpg);
+  background-image: url(../img/bg-1.jpg), url(../img/bg-4.jpg), url(../img/bg-5.jpg), url(../img/bg-4.jpg), url(../img/bg-5.jpg);
   background-position: left 0 top -50px, left 0 top 1300px, left 0 top 2500px, left 0 top 4500px, left 0 top 5700px;
   background-repeat: no-repeat;
   background-size: 100%, 100%, 100%, 100%, 100%, 100%;
@@ -123,13 +123,13 @@ body a {
 }
 @media screen and (max-width: 1200px) {
   body {
-    background-image: url(./img/bg-1.jpg), url(./img/bg-4.jpg), url(./img/bg-5.jpg), url(./img/bg-4.jpg), url(./img/bg-5.jpg);
+    background-image: url(../img/bg-1.jpg), url(../img/bg-4.jpg), url(../img/bg-5.jpg), url(../img/bg-4.jpg), url(../img/bg-5.jpg);
     background-position: left 0 top -50px, left 0 top 1550px, left 0 top 2500px, left 0 top 5000px, left 0 top 6800px;
   }
 }
 @media screen and (max-width: 768px) {
   body {
-    background-image: url(./img/bgm-2.jpg), url(./img/bgm-1.jpg), url(./img/bgm-3.jpg), url(./img/bgm-4.jpg), url(./img/bgm-5.jpg), url(./img/bgm-6.jpg), url(./img/bgm-7.jpg), url(./img/bgm-8.jpg), url(./img/bgm-9-10.jpg);
+    background-image: url(../img/bgm-2.jpg), url(../img/bgm-1.jpg), url(../img/bgm-3.jpg), url(../img/bgm-4.jpg), url(../img/bgm-5.jpg), url(../img/bgm-6.jpg), url(../img/bgm-7.jpg), url(../img/bgm-8.jpg), url(../img/bgm-9-10.jpg);
     background-position: right -30px top 350px, left 0 top 0, left 0 top 1000px, left 0 top 2560px, right 0 top 3550px, right 0 top 5250px, left 0 top 6000px, right 0 top 6500px, left 0 top 7300px;
     background-size: 70%, 80%, 80%, 80%, 80%, 60%, 50%, 70%, 40%;
   }
@@ -299,7 +299,7 @@ body a {
   }
 }
 .btn {
-  background: url(/img/btn-blue.svg) no-repeat;
+  background: url(../img/btn-blue.svg) no-repeat;
   width: 240px;
   height: 50px;
   padding: 16px 27px;
@@ -312,7 +312,7 @@ body a {
   cursor: pointer;
 }
 .btn:hover {
-  background: url(/img/btn-yell.svg) no-repeat;
+  background: url(../img/btn-yell.svg) no-repeat;
   color: #000000;
 }
 
@@ -804,7 +804,7 @@ body a {
 }
 
 .platform__container {
-  background-image: url(./img/group_sec1-all.svg);
+  background-image: url(../img/group_sec1-all.svg);
   background-repeat: no-repeat;
   border-radius: 25px;
   height: 595px;
@@ -844,7 +844,7 @@ body a {
 @media screen and (max-width: 480px) {
   .platform__container {
     height: 590px;
-    background-image: url(./img/bg-mob-pl-3.svg);
+    background-image: url(../img/bg-mob-pl-3.svg);
     background-size: contain;
     border-radius: 50px;
     padding: 70px 10px 40px 10px;
@@ -947,19 +947,19 @@ body a {
   width: 100%;
 }
 .whom__item.one {
-  background-image: url(./img/Новичкам.png);
+  background-image: url(../img/Новичкам.png);
   color: #111111;
 }
 .whom__item.two {
-  background-image: url(./img/СпециалистамIT.png);
+  background-image: url(../img/СпециалистамIT.png);
   padding-top: 130px;
 }
 .whom__item.three {
-  background-image: url(./img/СпециалистамИБ.png);
+  background-image: url(../img/СпециалистамИБ.png);
   color: #111111;
 }
 .whom__item.four {
-  background-image: url(./img/Компаниям.png);
+  background-image: url(../img/Компаниям.png);
   padding-top: 130px;
 }
 
@@ -1083,11 +1083,11 @@ body a {
 }
 .modules__item.one {
   padding-top: 14px;
-  background-image: url(./img/tab-1.png);
+  background-image: url(../img/tab-1.png);
 }
 .modules__item.two {
   padding-top: 60px;
-  background-image: url(./img/tab-2.png);
+  background-image: url(../img/tab-2.png);
   background-position: bottom 0 left 0;
   color: #8a8a8a;
 }
@@ -1450,7 +1450,7 @@ body a {
   }
 }
 .advantages__container {
-  background-image: url(./img/adv-bg.png);
+  background-image: url(../img/adv-bg.png);
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
   border-radius: 25px;
@@ -1460,7 +1460,7 @@ body a {
 }
 @media screen and (max-width: 768px) {
   .advantages__container {
-    background-image: url(./img/bg-mob-adw-1.svg);
+    background-image: url(../img/bg-mob-adw-1.svg);
     background-size: 100%;
     background-position: bottom 0 right 0;
     padding: 20px;
@@ -1733,7 +1733,7 @@ body a {
   }
 }
 .form-2__form .form-2-btn {
-  background: url(./img/btn-yell.svg) no-repeat;
+  background: url(../img/btn-yell.svg) no-repeat;
   margin-left: auto;
   color: #111111;
 }
@@ -1940,7 +1940,7 @@ body a {
   }
 }
 .wcomp__container {
-  background-image: url(./img/bg-whom.jpg);
+  background-image: url(../img/bg-whom.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;

@@ -5,8 +5,8 @@ body {
   font-size: 18px;
   color: $primary-text-color;
   background-color: $primary-color;
-  background-image: url(./img/bg-1.jpg), url(./img/bg-4.jpg),
-    url(./img/bg-5.jpg), url(./img/bg-4.jpg), url(./img/bg-5.jpg);
+  background-image: url(../img/bg-1.jpg), url(../img/bg-4.jpg),
+    url(../img/bg-5.jpg), url(../img/bg-4.jpg), url(../img/bg-5.jpg);
   background-position: left 0 top -50px, left 0 top 1300px, left 0 top 2500px,
     left 0 top 4500px, left 0 top 5700px;
   background-repeat: no-repeat;
@@ -19,17 +19,17 @@ body {
     color: $primary-text-color;
   }
   @media screen and (max-width: 1200px) {
-    background-image: url(./img/bg-1.jpg), url(./img/bg-4.jpg),
-      url(./img/bg-5.jpg), url(./img/bg-4.jpg), url(./img/bg-5.jpg);
+    background-image: url(../img/bg-1.jpg), url(../img/bg-4.jpg),
+      url(../img/bg-5.jpg), url(../img/bg-4.jpg), url(../img/bg-5.jpg);
     background-position: left 0 top -50px, left 0 top 1550px, left 0 top 2500px,
       left 0 top 5000px, left 0 top 6800px;
   }
 
   @media screen and (max-width: 768px) {
-    background-image: url(./img/bgm-2.jpg), url(./img/bgm-1.jpg),
-      url(./img/bgm-3.jpg), url(./img/bgm-4.jpg), url(./img/bgm-5.jpg),
-      url(./img/bgm-6.jpg), url(./img/bgm-7.jpg), url(./img/bgm-8.jpg),
-      url(./img/bgm-9-10.jpg);
+    background-image: url(../img/bgm-2.jpg), url(../img/bgm-1.jpg),
+      url(../img/bgm-3.jpg), url(../img/bgm-4.jpg), url(../img/bgm-5.jpg),
+      url(../img/bgm-6.jpg), url(../img/bgm-7.jpg), url(../img/bgm-8.jpg),
+      url(../img/bgm-9-10.jpg);
     // background-image: url(/img/bgm-1.svg), url(/img/bgm-2.svg),
     //   url(/img/bgm-3.svg), url(/img/bgm-4.svg), url(/img/bgm-5.svg),
     //   url(/img/bgm-6.svg), url(/img/bgm-7.svg), url(/img/bgm-8.svg),
