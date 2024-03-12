@@ -59,19 +59,19 @@
       width: 100%;
     }
     &.one {
-      background-image: url(/img/Новичкам.png);
+      background-image: url(./img/Новичкам.png);
       color: $primary-color;
     }
     &.two {
-      background-image: url(/img/СпециалистамIT.png);
+      background-image: url(./img/СпециалистамIT.png);
       padding-top: 130px;
     }
     &.three {
-      background-image: url(/img/СпециалистамИБ.png);
+      background-image: url(./img/СпециалистамИБ.png);
       color: $primary-color;
     }
     &.four {
-      background-image: url(/img/Компаниям.png);
+      background-image: url(./img/Компаниям.png);
       padding-top: 130px;
     }
   }
