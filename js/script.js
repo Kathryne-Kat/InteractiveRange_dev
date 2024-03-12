@@ -1,16 +1,17 @@
 $(document).ready(function () {
   //прикрепляем клик по заголовкам acc-head
   $("#accordeon .acc-head").on("click", f_acc);
-  
 });
 
 function f_acc() {
   //скрываем все кроме того, что должны открыть
   $("#accordeon .acc-body").not($(this).next()).slideUp(100);
+  
   // открываем или скрываем блок под заголовоком, по которому кликнули
   $(this).next().slideToggle(100);
-  $("#accordeon .faq-open1").toggleClass("is-hidden");
-  $("#accordeon .faq-closed1").toggleClass("is-hidden");
+
+  // используем find() для поиска элементов внутри текущего блока
+  $(this).find(".faq-open1, .faq-closed1").toggleClass("is-hidden");
 }
 
 $(document).ready(function() {
